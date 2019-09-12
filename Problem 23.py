@@ -1,6 +1,5 @@
 ﻿from math import floor
 from timeit import default_timer as time
-from timeit import default_timer as time
 
 def d(x):
     DivisionSum = 0
