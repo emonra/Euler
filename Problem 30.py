@@ -8,6 +8,5 @@ for i in range(2,354294):
         SumOfDigitsPowered += int(count)**5
     if SumOfDigitsPowered == i:
         ListOfNumbers.append(i)
-        print(len(ListOfNumbers), i)
 print(sum(ListOfNumbers))
 print(time()-start)
