@@ -26,5 +26,5 @@ for count in range(len(L) - 2, -1, -1):
         L[count][i] = L[count][i] + max(L[count+1][i], L[count+1][i+1])
 
 elapsed = timeit.default_timer() - start
-[print(i) for i in L]
+print(L[0][0])
 print(elapsed)
