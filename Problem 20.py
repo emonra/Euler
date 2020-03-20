@@ -1,4 +1,4 @@
-import timeit
+from timeit import default_timer as time
 
 def Factorial(n):
     fact = 1
@@ -13,7 +13,6 @@ def SumOfDigits(x):
         SumOfSubString = SumOfSubString + int(j)
     return SumOfSubString
 
-start = timeit.default_timer()
+start = time()
 print(SumOfDigits(Factorial(100)))
-elapsed = timeit.default_timer() - start
-print(elapsed)
+print(time() - start)
