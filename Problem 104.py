@@ -1,11 +1,7 @@
 from timeit import default_timer as time
 
 start = time()
-start1 = start
 def IsPandigital(Number):
-	Number = str(Number)
-	if len(Number) > 9:
-		return False
 	for i in range(1, 10):
 		if Number.find(str(i)) == -1:
 			return False
@@ -25,9 +21,10 @@ while True:
 	Fib[0] = Fib[1]
 	Fib[1] = Fib[2]
 	Fib[2] = Fib[0] + Fib[1]
+	"""checking pandigital-ness makes the script runs for more 
+	than an hour, which means it's probably not efficient"""
 	if count % 10000 == 0:
-		print(count, time() - start1)
-		start1 = time()
+		print(count, time() - start)
 	if EndsArePandigital(Fib[2]):
 		print(count)
 		break
