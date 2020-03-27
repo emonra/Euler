@@ -32,10 +32,10 @@ def TruncatableFromRight(Number):
 def main():
 	start = time()
 	count = 0
-	n = 0
+	n = 9
 	Sum = 0
 	while count < 11:
-		n += 1
+		n += 2
 		if IsPrime(n):
 			if(TruncatableFromLeft(n) and TruncatableFromRight(n)):
 				count += 1
