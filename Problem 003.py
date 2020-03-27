@@ -1,9 +1,9 @@
 from timeit import default_timer as time
-from math import sqrt as sqrt
 
 start = time()
 Number = 600851475143
 def IsPrime(n):
+	from math import sqrt
 	for i in range(2, int(sqrt(n) + 1)):
 		if n % i == 0: 
 			return False
